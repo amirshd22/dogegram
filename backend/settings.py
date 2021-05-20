@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'userProfile',
     'posts.apps.PostsConfig',
+    'dogeTweet.apps.DogetweetConfig',
+
 
     
     'rest_framework',
@@ -98,7 +100,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases

@@ -5,13 +5,13 @@ urlpatterns = [
     path('', views.apiOverView , name="apiOverView"),
     
     path('posts/', views.getPosts , name="getPosts"),
-    path('post-details/', views.getPostDetails , name="getPostsDetails"),
+    path('post-details/<str:pk>/', views.getPostDetails , name="getPostsDetails"),
     path('create-post/', views.createPost , name="createPost"),
     path('like-post/', views.likePost , name="likePost"),
-    path('edit-post/', views.editPost , name="editPost"),
-    path('delete-post', views.deletePost , name="deletePost"),
+    path('edit-post/<str:pk>/', views.editPost , name="editPost"),
+    path('delete-post/<str:pk>/', views.deletePost , name="deletePost"),
     
-    path('edit-comment', views.editComment , name="editComment"),
-    path('delete-comment', views.deleteComment , name="deleteComment"),
+    path('edit-comment/<str:pk>/', views.editComment , name="editComment"),
+    path('delete-comment/<str:pk>/', views.deleteComment , name="deleteComment"),
 
 ]
